@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<!-- <html class="no-js">-->
+<meta charset="UTF-8">
+<title> Amigos OdontoPets </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="adopcion" content="" />
+<meta name="perros y gatos" content="" />
+<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/skel-layers.min.js"></script>
+<script src="js/init.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+<noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+	<link rel="stylesheet" href="css/style-medium.css" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css" />
+</noscript>
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<h1><a href="index.html">Odontopets Adopcion</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="mascotas.html">Mascotas</a></li>
+				<li><a href="galeria_adopta.html">Galeria de Adopcion </a></li>
+				<li><a href="contacto.html" class="button special">Contactanos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="container">
+
+			<header class="major">
+				<h2>Galeria de adopcion </h2>
+				<p>Amigo de 4 patitas que puedes adoptar </p>
+			</header>
+</div>
+</section>
+		
+				<div class="container demo-1">
+					<!-- Codrops top bar -->
+
+					<div class="main">
+						<!-- Elastislide Carousel -->
+						<ul id="carousel" class="elastislide-list">
+							<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+							<li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+							<li><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+							<li><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+							<li><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+							<li><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+							<li><a href="#"><img src="images/small/7.jpg" alt="image07" /></a></li>
+							<li><a href="#"><img src="images/small/8.jpg" alt="image08" /></a></li>
+							<li><a href="#"><img src="images/small/9.jpg" alt="image09" /></a></li>
+							<li><a href="#"><img src="images/small/10.jpg" alt="image10" /></a></li>
+
+						</ul>
+						<!-- End Elastislide Carousel -->
+					</div>
+				</div>
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+				<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+				<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+				<script src="js/modernizr.custom.17475.js"></script>
+				<script type="text/javascript">
+
+					$( '#carousel' ).elastislide();
+
+				</script>
+
+				<!-- Text -->
+				<header class="major">
+				<section>
+					<br>
+					<h3>Mas informacion </h3>
+					<p><a href="http://bogota.allanuncios.com.co/adopcion-de-mascotas+bogota"> http://bogota.allanuncios.com.co/adopcion-de-mascotas+bogota </a></p>
+				</section>
+				</header>
+					<hr />
+					<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+					<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+					<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+					<script type="text/javascript">
+
+			// example how to integrate with a previewer
+
+			var current = 0,
+			$preview = $( '#preview' ),
+			$carouselEl = $( '#carousel' ),
+			$carouselItems = $carouselEl.children(),
+			carousel = $carouselEl.elastislide( {
+				current : current,
+				minItems : 4,
+				onClick : function( el, pos, evt ) {
+
+					changeImage( el, pos );
+					evt.preventDefault();
+
+				},
+				onReady : function() {
+
+					changeImage( $carouselItems.eq( current ), current );
+
+				}
+			} );
+
+			function changeImage( el, pos ) {
+
+				$preview.attr( 'src', el.data( 'preview' ) );
+				$carouselItems.removeClass( 'current-img' );
+				el.addClass( 'current-img' );
+				carousel.setCurrent( pos );
+
+			}
+
+		</script>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+
+				<div class="row">
+					<div class="8u 12u$(medium)">
+
+					<ul class="copyright">
+						<li>&copy; Todos los derechos reservados.</li><br>
+						<li><a>desarrollada por Fabian Espitia para Universidad Nacional Abierta y a Distancia ( UNAD ).</a></li><br>
+						<li><a>como trabajo para la materia Diseño web 2016</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="4u$ 12u$(medium)">
+					<ul class="icons">
+						<li>
+							<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+						</li>
+						<li>
+							<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+</html>
